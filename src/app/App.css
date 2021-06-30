@@ -1,0 +1,136 @@
+
+*{
+  box-sizing: border-box;
+}
+ .App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding:55px;
+  background:url('./beach.png') 0/cover no-repeat;
+  text-align: center;
+ }
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.total{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
+  color: aliceblue;
+}
+
+.player{
+  display: flex;
+  margin: 0 auto;
+}
+
+.count{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  color: aliceblue;
+  display: block;
+  background-color: blue;
+  float: left;
+}
+
+span{
+  display: block;
+  width: 35%;
+  float: left;
+  background-color: blue;
+  font-size: 20px;
+  color: aliceblue;
+  margin: 5px;
+  padding: 3px;
+}
+
+.firstMove{
+  float: left;
+  margin: 10px auto;
+  color: aliceblue;
+  font-weight: 500;
+}
+
+.field{
+background-color: rgb(224, 223, 120);  
+position: relative; 
+margin: 25px auto;
+width: 300px;
+height:300px;
+}
+
+.field_block{
+  float: left;
+  border: 1px solid darkblue ;
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  font-size: 28px;
+}
+
+.blue{
+  color:blue
+}
+
+.red{
+  color:rgb(146, 27, 62)
+}
+
+.hide{
+  display: none;
+}
+
+.win-message{
+  width:340px;
+  height: 70px;
+  border-radius: 5px;
+  color: rgb(24, 35, 136);
+  font-size: 30px;
+  font-weight: 700;
+  background-color: rgb(27, 211, 103);
+  display: block;
+  padding: 10px;
+  top: 370px;
+  left: 550px;
+  position: absolute;
+  z-index: 10;
+}
+
+.buttons{
+  width: 40%;
+  margin: 0 auto;
+ }
+
+.btn{
+  margin: 0 10px;
+  width: 30%;
+  padding: 5px;
+  color: blue;
+  font-weight: 700;
+  background-color: chartreuse;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
